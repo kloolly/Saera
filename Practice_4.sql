@@ -68,8 +68,10 @@ select
     e.deptno as "DEPARTMENT",
 	e.ename as "EMPLOYEE",
 	c.ename as "COLLEAGUE"
-from emp e join emp c on e.deptno = c.deptno
-order by e.deptno;
+from emp e join emp c 
+    on e.deptno = c.deptno 
+    and e.ename != c.ename
+order by e.deptno, e.ename, c.ename;
 
 9. Show the structure of the SALGRADE table.
 Create a query that will display the name, job,
