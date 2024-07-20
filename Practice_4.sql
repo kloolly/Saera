@@ -63,6 +63,13 @@ order by m1.empno;
 name, department number, and all the employees
 that work in the same department as a given
 employee. Give each column an appropriate label.
+select * from emp;
+select 
+    e.deptno as "DEPARTMENT",
+	e.ename as "EMPLOYEE",
+	c.ename as "COLLEAGUE"
+from emp e join emp c on e.deptno = c.deptno
+order by e.deptno;
 
 9. Show the structure of the SALGRADE table.
 Create a query that will display the name, job,
