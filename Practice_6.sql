@@ -79,4 +79,3 @@ where deptno in (
     )
 order by sal desc
 ;
-
