@@ -9,11 +9,11 @@
 -- desc employee
 
 -- 2. Create a PRIMARY KEY constraint on the DEPARTMENT table using the ID column. The
--- constraint should be enabled at creation.
+-- constraint should be enabled at creation.t
 
-select * from department
+-- alter table department
+--     add constraint pk_departmentt_id primary key (ID);
+-- desc department
 
-alter table department
-    add constraint pk_departmentt_id primary key (ID);
-
-desc department
+-- 3. Add a foreign key reference on the EMPLOYEE table that will ensure that the employee is
+-- not assigned to a nonexistent department.
