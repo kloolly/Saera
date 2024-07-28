@@ -1,4 +1,5 @@
 -- Practice 11
+-- from new SQL worksheet run <db4010_sql_script01.sql> then <Practice_10.sql> 
 
 -- 1. Add a table level PRIMARY KEY constraint to the EMPLOYEE table using the ID column.
 -- The constraint should be enabled at creation.
